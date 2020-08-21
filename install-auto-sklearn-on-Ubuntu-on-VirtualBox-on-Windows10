@@ -1,1 +1,23 @@
-# How to install 'auto-sklearn' on 'Ubuntu' on 'Oracle VM VirtualBox' on 'Windows 10'
+# How to install 'auto-sklearn' on 'Ubuntu' on 'Oracle VM VirtualBox' on 'Windows 10' using 'Anaconda'
+# python3.8 threw 'Segmentation fault' error while fitting the model, python 3.7 does not have that issue
+# Everything else is as per installation instruction documented at https://automl.github.io/auto-sklearn/master/installation.html
+# Version info:
+#   Ubuntu Desktop 20.04.1 LTS
+#   auto-sklearn 0.8.0
+
+conda create -n automl_v1 python=3.7
+conda activate automl_v1
+(automl_v1) -VirtualBox:~$ sudo apt-get install build-essential swig
+(automl_v1) -VirtualBox:~$ swig -version
+
+SWIG Version 4.0.1
+
+Compiled with g++ [x86_64-pc-linux-gnu]
+
+Configured options: +pcre
+
+Please see http://www.swig.org for reporting bugs and further information
+
+(automl_v1) -VirtualBox:~$ conda install gxx_linux-64 gcc_linux-64 swig
+(automl_v1) -VirtualBox:~$ curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt | xargs -n 1 -L 1 pip install
+(automl_v1) -VirtualBox:~$ pip install auto-sklearn
