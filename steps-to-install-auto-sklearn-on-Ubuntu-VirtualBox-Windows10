@@ -33,3 +33,8 @@ Please see http://www.swig.org for reporting bugs and further information
 Accuracy score 0.9911111111111112
 
 # Tried to run the same from Jupyter Notebook, but the Notebook crashed when fit method was called.
+
+# References
+#   https://www.architecture-performance.fr/ap_blog/first-try-of-auto-sklearn/
+#   https://automl.github.io/auto-sklearn/master/index.html#
+#   https://www.automl.org/
