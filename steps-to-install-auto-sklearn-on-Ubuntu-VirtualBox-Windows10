@@ -1,5 +1,5 @@
-# How to install 'auto-sklearn' on 'Ubuntu' on 'Oracle VM VirtualBox' on 'Windows 10' using 'Anaconda'
-# python3.8 threw 'Segmentation fault' error while fitting the model, python 3.7 does not have that issue
+# Steps to install 'auto-sklearn' using Anaconda env on 'Ubuntu'-'Oracle VM VirtualBox'-'Windows 10'.
+# python3.8 threw 'Segmentation fault' error while fitting the model, python 3.7 does not have that issue.
 # Everything else is as per installation instruction documented at https://automl.github.io/auto-sklearn/master/installation.html
 # Version info:
 #   Ubuntu Desktop 20.04.1 LTS
