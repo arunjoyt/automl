@@ -21,3 +21,15 @@ Please see http://www.swig.org for reporting bugs and further information
 (automl_v1) -VirtualBox:~$ conda install gxx_linux-64 gcc_linux-64 swig
 (automl_v1) -VirtualBox:~$ curl https://raw.githubusercontent.com/automl/auto-sklearn/master/requirements.txt | xargs -n 1 -L 1 pip install
 (automl_v1) -VirtualBox:~$ pip install auto-sklearn
+
+# After installing auto-sklearn, example.py (https://github.com/arunjoyt/automl/blob/master/example.py) was run
+# which gave the below output
+
+(automl_v1) -VirtualBox:~$ python example.py 
+/home/arunjoyt/anaconda3/envs/automl_v1/lib/python3.7/site-packages/pyparsing.py:3190: FutureWarning: Possible set intersection at position 3
+  self.re = re.compile(self.reString)
+2020-08-21 15:28:08.230705 Start of fit
+2020-08-21 16:28:06.989103 End of fit
+Accuracy score 0.9911111111111112
+
+# Tried to run the same from Jupyter Notebook, but the Notebook crashed when fit method was called.
