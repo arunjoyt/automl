@@ -1,3 +1,5 @@
+# The code is from https://automl.github.io/auto-sklearn/master/index.html#example
+# Added time log to check the time taken to fit the model.
 import datetime
 import autosklearn.classification
 import sklearn.model_selection
